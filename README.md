@@ -3,25 +3,26 @@ Simple Toaster lib
 
 
 
-> Step 1. Add the JitPack repository to your build file
+To get a Git project into your build:
 
-'''gradle
+Step 1. Add the JitPack repository to your build file
 
-allprojects {
+gradle
+maven
+sbt
+leiningen
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-'''
-> Step 2. Add the dependency
-'''gradle
+Step 2. Add the dependency
 
-dependencies {
+	dependencies {
 	        implementation 'com.github.pramodkumarp6:Toaster:1.0.0'
 	}
-  
-  ...
-
 
 
